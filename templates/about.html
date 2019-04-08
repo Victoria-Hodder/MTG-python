@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 py-2">
+            <h1 class="title3 text-center py-5">About</h1>
+
+            <img src="{{ url_for('static', filename='Victoria_profile.jpg')}}" class="pb-5 body-image img-fluid">
+            
+            <h2 class="title1 text-center">About me</h2>
+            <p>My name is Victoria Hodder and I teach English as a foreign language. 
+            I come from Brighton and studied History at university. In 2010, I moved 
+            to Germany to improve my German. In 2011, I took my CELTA and became a 
+            teacher of English. I have been teaching since then. Right now, I'm living 
+            and teaching in Berlin.</p>
+            <p>Learn more about my career so far on my LinkedIn page</p>
+
+
+            <h2 class="title1 text-center">About MTG</h2>
+            <p>MTG comes from my own confidence crisis. In 2015, I stopped teaching. 
+            My anxiety was so high - I found it hard to leave the house.</p>
+            <p><strong> I knew there was something more. I knew there was something I could 
+            learn here.</strong></p>
+            <p>So I began to read and to listen to others. From them, I learnt the 
+            confidence to believe in myself.</p>
+            <p><strong>I started to teach again, I started to write, I started to share.</strong></p>
+            <p>Now, when I teach, I teach confidence AND brilliant English. Because 
+            everyone, EVERYONE, needs to know that they can do it.</p>
+            <p><strong>I can, you can, we all can.</strong></p>
+            <p class="pb-5">Because you already are AMAZING. You are. Join me and start believing it today.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

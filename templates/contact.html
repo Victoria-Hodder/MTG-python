@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 py-2 text-center py-5">
+            <h1 class="title3 text-center pb-3">Contact</h1>
+            
+            <p>Do you have any questions about my blog?</p>
+            <p>Would you like to comment but you’re a bit nervous to share with everyone?</p>
+            <p>Would you like to ask me about lessons?</p>
+            <p>Then contact me, I can’t wait to hear from you!</p>
+            <p>Email: morethangrammar@gmail.com</p>
+            <p>Phone: +49 (0) 162 51 88 501.</p>
+            <p>(This is how excited I am about getting your message)</p>
+            
+            <img src="{{ url_for('static', filename='Victoria_happy.jpg')}}" class="body-image img-fluid py-5">
+
+
+            <h3 class="title1">Impressum</h3>
+                <ul class="list-unstyled py-4">
+                    <li>Victoria Hodder B.A.</li>
+                    <li>Monumentenstr. 9</li>
+                    <li>10829 Berlin</li>
+                    <li>+49 162 5188501</li>
+                </ul>
+            <p>morethangrammar@gmail.com</p>
+            <p>Steuernr.: 18/348/00088</p>
+            <p>Copyright © Victoria Hodder at MoreThanGrammar 2018</p>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

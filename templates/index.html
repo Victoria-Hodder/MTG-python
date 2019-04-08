@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <main class="container-fluid">
+        <div class="row py-2 col-md-6 offset-md-3 justify-content-md-center">
+            <h2 class="title3 text-center"><strong>MTG is about building your language confidence.</strong></h2>
+            <p>It is the idea that you are MORE than your mistakes. You are MORE than your grades. You are MORE than the words you use and you are MORE than what other people say.</p>
+            <h4 class="pink-text"><strong>And yes… you are MORE than your grammar.</strong></h4>
+            <h3 class="mt-5"><strong>Click below to book your first lesson</strong></h3>
+        </div>
+        <div class="col-4 offset-md-4 offset-sm-4 mt-2 mb-5 justify-content-md-center">
+            <button type="submit" class="btn btn-block btn-lg btn-info pink-background wow animated bounce">Let's go!</button>
+        </div>
+
+                
+        <div class="container-fluid">
+
+                <!--About section-->
+
+            <div class="row py-5 teal-background">
+                <div class="col-md-5 offset-md-1">
+                    <img src="{{ url_for('static', filename='Victoria_profile.jpg')}}" class="body-image img-fluid">
+                </div>
+                <div class="col-md-5">
+                    <h2 class="title1">About</h2>
+                    <p>MoreThanGrammar came from my own crisis of confidence. 
+                        I then decided to use what I learned to help my students. 
+                        Because everyone deserves to feel good when they speak English!
+                        <a href="https://morethangrammar.com/about/">Read more about my story here.</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--Advantages of private lessons-->
+
+            <div class="row py-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <h2 class="pink-text wow animated flipInY">Advantages of Private Training</h2>
+                </div>
+            </div>
+            
+            <div class="row pb-5 mb-5 text-center">
+                <div class="col-md-3 px-5 zoom">
+                    <i class="far fa-list-alt fa-7x pb-3"></i>
+                    <br />
+                    <strong>Your needs</strong>
+                    <p>We can use the time to talk about what exactly YOU need</p>
+                </div>
+                <div class="col-md-3 px-5 zoom">
+                    <i class="fas fa-running fa-7x pb-3"></i>
+                    <br />
+                    <strong>Your speed</strong>
+                    <p>Learn as fast or as slow as you need, you decide!</p>
+                </div>
+                <div class="col-md-3 px-5 zoom">
+                    <i class="far fa-clock fa-7x pb-3"></i>
+                    <br />
+                    <strong>Your time</strong>
+                    <p>Learn at the best time for you, for as long as you like</p>
+                </div>                
+                <div class="col-md-3 px-5 zoom">
+                    <i class="fas fa-home fa-7x pb-3"></i>
+                    <br />
+                    <strong>Your place</strong>
+                    <p>In your office, a cafe or a walk in the sun, learn where is best for you</p>
+                </div>
+            </div>
+
+
+            <!--How I teach section-->
+
+            <div class="row py-5 teal-background"> 
+                <div class="col-md-5 offset-md-1">
+                    <img src="{{ url_for('static', filename='two_people.jpg')}}" class="body-image img-fluid">
+                </div>
+                <div class="col-md-5">
+                    <h2 class="title1">How I teach</h2>
+                    <p>I am not a conventional teacher. 
+                        I focus on conversation because this is a lot more effective than endless grammar exercises. 
+                        The most important thing for me is that you feel GOOD when you speak English. 
+                        <a href="https://morethangrammar.com/category/how-i-teach/">Read more about how I teach here.</a>
+                    </p>
+                </div>
+            </div>
+
+                <!--Read my blog section-->
+
+            <div class="row py-5 mt-5">
+                <div class="col-md-5 offset-md-1">
+                    <img src="{{ url_for('static', filename='yeah.jpg')}}" class="body-image img-fluid">
+                </div>
+                <div class="col-md-5">
+                    <h2 class="title1">Read my blog</h2>
+                    <p>Not sure you're ready to book lessons yet? That's fine. 
+                        Until then, take the time to read more about what I believe, 
+                        how you can feel good while speaking English and how you can learn effectively too!
+                        <a href="https://morethangrammar.com/blog/">Find loads of interesting posts here.</a>
+                    </p>
+                </div>  
+            </div>
+        </div>
+
+        
+        <!--Search bar-->
+
+
+        <form class="form-inline py-5 mb-5 col-md-6 offset-md-3 justify-content-md-center">
+            <h2 class="pink-text pt-5 pb-3 pink-text">Looking for something special?</h2>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+    </main>
+
+{% endblock %}
