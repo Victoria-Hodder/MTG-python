@@ -1,10 +1,5 @@
 from flask import Flask, jsonify, render_template, url_for 
-
-app = Flask(__name__)
-
-@app.route('/notify')
-def notify_me():
-    return 'Notification fired!'
+from MTGblog import app
 
 @app.route('/')
 def get_homepage():
@@ -25,6 +20,3 @@ def get_booklessons():
 @app.route('/contact')
 def get_contact():
     return render_template('contact.html')
-
-if __name__ == "__main__":
-    app.run()
