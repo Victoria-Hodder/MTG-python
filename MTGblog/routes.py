@@ -13,8 +13,8 @@ def get_about():
 def get_blog():
     return render_template('blog.html')
 
-@app.route('/booklessons')
-def get_booklessons():
+@app.route('/lessons')
+def get_lessons():
     return render_template('booklessons.html')
 
 @app.route('/contact')
