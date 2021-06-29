@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, url_for 
+from flask import Flask, render_template 
 from MTGblog import app
 
 @app.route('/')
@@ -13,7 +13,7 @@ def get_about():
 def get_blog():
     return render_template('blog.html')
 
-@app.route('/lessons')
+@app.route('/booklessons')
 def get_lessons():
     return render_template('booklessons.html')
 
